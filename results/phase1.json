@@ -1,0 +1,23 @@
+{
+  "params": {
+    "p1": 0.028,
+    "p2": 0.025,
+    "p3": 1.3e-05,
+    "n": 0.093,
+    "Gb": 90.0,
+    "Ib": 7.0,
+    "VI": 12.0,
+    "VG": 112.0
+  },
+  "u_basal": 7.812,
+  "meal": {
+    "carbs_g": 60.0,
+    "t_meal": 30.0,
+    "tau": 40.0,
+    "bioavail": 0.8
+  },
+  "table_md": "| param | value | unit | meaning |\n|---|---|---|---|\n| p1 | 0.028 | 1/min | glucose effectiveness (insulin-independent uptake) |\n| p2 | 0.025 | 1/min | decay of remote insulin action  (time const. 1/p2 = 40 min) |\n| p3 | 1.3e-05 | 1/(min^2 uU/mL) | insulin sensitivity (gain from plasma insulin to action) |\n| n | 0.093 | 1/min | plasma insulin clearance (time const. 10.8 min) |\n| Gb | 90.0 | mg/dL | basal glucose |\n| Ib | 7.0 | uU/mL | basal insulin |\n| VI | 12.0 | L | insulin distribution volume |\n| VG | 112.0 | dL | glucose distribution volume (1.6 dL/kg x 70 kg) |\n| u_basal | 7.812 | mU/min | n*Ib*VI = 0.47 U/h basal infusion |",
+  "target": 100.0,
+  "hypo": 70.0,
+  "hyper": 180.0
+}
